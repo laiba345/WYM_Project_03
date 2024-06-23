@@ -2,11 +2,11 @@ import React, { memo } from 'react'
 import type { FC, ReactNode } from 'react'
 
 interface IProps {
-  children?: ReactNode
+    children?: ReactNode
 }
 
 const Ranking: FC<IProps> = () => {
-  return <div>Ranking</div>
+    return <div>Ranking</div>
 }
 
 export default memo(Ranking)
