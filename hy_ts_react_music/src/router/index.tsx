@@ -20,9 +20,10 @@ const Focus = lazy(() => import('@/views/focus'))
 const Download = lazy(() => import('@/views/download'))
 
 const routes: RouteObject[] = [
+    // routes里面整个是对象的形式
     {
         path: '/',
-        element: <Navigate to="/discover" />
+        element: <Navigate to="/discover" /> // element后面是对象的形式
     },
     {
         path: '/discover',
@@ -73,3 +74,7 @@ const routes: RouteObject[] = [
 ]
 
 export default routes
+
+// 正常情况下
+// const routes: any[] = []
+// export default routes
