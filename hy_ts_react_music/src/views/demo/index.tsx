@@ -3,6 +3,7 @@ import type { FC, ReactNode } from 'react'
 
 interface IProps {
     children?: ReactNode
+    // 下面的内容是可能有可能没有的；
     name: string
     age: number
     height?: number

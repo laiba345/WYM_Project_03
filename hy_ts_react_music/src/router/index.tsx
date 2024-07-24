@@ -1,4 +1,5 @@
 import React, { lazy } from 'react'
+// 下述的Navigate是
 import { Navigate } from 'react-router-dom'
 import type { RouteObject } from 'react-router-dom'
 
@@ -31,6 +32,8 @@ const routes: RouteObject[] = [
         children: [
             {
                 path: '/discover',
+                // 默认跳跃，第一个跳到这个地方；
+                // 单引号和双引号，jsx属性里面的value推荐使用的是双引号；
                 element: <Navigate to="/discover/recommend" />
             },
             {
