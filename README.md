@@ -220,5 +220,19 @@ trim_trailing_whitespace = false
 - 想要使用store中的数据，可以在store中建立module文件夹，在文件夹中存入相关数据
   - module文件夹；
   
-
-
+## 7. 项目中集成axios，
+- 以往都会对axios进行二次封装；
+- 直接使用之前用到过的知识即可，比如说之前已经封装好的内容；
+- 在进行测试的时候，可以在具体的组件内部进行网络请求测试
+  - 本次在recommend组件中进行相关测试；
+  - 在进行数据发布的时候，常常使用useEffect这个Hook来实现
+- 获取到数据就可以进行相应的展示，但是最终的数据都是放在我们的store当中；
+  - 测试的话，可以使用useState来展示；
+    - 初始的话可以使用范型；
+    - 类型的转换可以去 json to typescript当中
+- 在react项目中如何区分开发环境和生产环境？
+  - 3种方式（service => config => index.ts）
+- 开启本地的一个服务操作
+  - npm install -g serve
+  - serve -s build(使用build文件夹作为相关资源)
+- 类组件的类型定义，demo文件夹下的demo02.tsx

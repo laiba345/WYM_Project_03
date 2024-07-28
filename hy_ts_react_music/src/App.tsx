@@ -6,6 +6,7 @@ import routes from './router'
 // 在最后进行使用的时候，只需要用到这个已经定义好的函数即可，会自动进行类型识别操作
 import { useAppSelector, useAppDispatch, appShallowEqual } from './store'
 import { changeMessageAction } from './store/module/counter'
+import Demo02 from './views/demo/class02'
 // import store from './store'
 
 // // const state = store.getState()
@@ -35,7 +36,7 @@ function App() {
         appShallowEqual
     )
 
-    // 事件处理函数
+    // 事件处理函数，事件处理函数要通过dispatch来进行调用；
     const dispatch = useAppDispatch()
     // 事件处理函数通常放在return上面
     function handleChangeMessage() {
@@ -46,6 +47,7 @@ function App() {
     return (
         <div className="App">
             <div className="nav">
+                <Demo02 name="kk" age={18}></Demo02>
                 <Link to="/discover">发现音乐</Link>
                 <Link to="/mine">我的音乐</Link>
                 <Link to="/focus">关注</Link>
