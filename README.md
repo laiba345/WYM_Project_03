@@ -236,3 +236,10 @@ trim_trailing_whitespace = false
   - npm install -g serve
   - serve -s build(使用build文件夹作为相关资源)
 - 类组件的类型定义，demo文件夹下的demo02.tsx
+- 354之前就可以将所有的准备工作独立开发完成；
+
+## 8. 项目整体页面的搭建
+- 头部（header）
+- 尾部（footer）
+- 中间组件部分进行自由切换操作；
+
